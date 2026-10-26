@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>罗嘉裕 Gavin Luo · 海外社媒 / 社区运营</title>
+<meta name="description" content="罗嘉裕（Gavin Luo）— 5 年海外社媒与社区运营经验，X / Facebook / YouTube / LinkedIn / Discord / Telegram 全平台矩阵运营，Web3 & AI 社区深耕者。">
+<style>
+:root{
+  --bg:#f7f6f2;
+  --panel:#ffffff;
+  --ink:#1c2333;
+  --ink-soft:#4c5566;
+  --ink-faint:#8b93a3;
+  --accent:#2456e6;
+  --accent-soft:#e8eefc;
+  --accent-deep:#12308f;
+  --gold:#c98a2b;
+  --line:#e6e4dc;
+  --radius:16px;
+  --sans:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+/* ===== nav ===== */
+nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(247,246,242,.88);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:700;letter-spacing:.5px;color:var(--ink)}
+.brand span{color:var(--accent)}
+nav ul{display:flex;gap:4px;list-style:none}
+nav ul a{
+  display:block;padding:6px 14px;border-radius:99px;
+  color:var(--ink-soft);font-size:14px;
+}
+nav ul a:hover{background:var(--accent-soft);color:var(--accent-deep);text-decoration:none}
+@media(max-width:720px){nav ul{display:none}}
+
+/* ===== hero ===== */
+header{padding:72px 0 56px}
+.hero{display:flex;gap:32px;align-items:center}
+.avatar{
+  width:112px;height:112px;flex:none;border-radius:32px;
+  background:linear-gradient(135deg,var(--accent) 0%,var(--accent-deep) 100%);
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:40px;font-weight:700;letter-spacing:1px;
+  box-shadow:0 12px 30px rgba(36,86,230,.28);
+}
+.hero h1{font-size:34px;letter-spacing:1px}
+.hero h1 small{font-size:20px;color:var(--ink-faint);font-weight:500;margin-left:8px}
+.hero .tagline{
+  margin-top:6px;font-size:17px;color:var(--accent-deep);font-weight:600;
+}
+.hero .contact{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px 22px;color:var(--ink-soft);font-size:14.5px}
+.hero .contact a{color:var(--ink-soft)}
+.hero .contact a:hover{color:var(--accent)}
+.cta{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:10px 22px;border-radius:99px;font-size:15px;font-weight:600;
+}
+.btn-primary{background:var(--accent);color:#fff!important;box-shadow:0 8px 20px rgba(36,86,230,.3)}
+.btn-primary:hover{background:var(--accent-deep);text-decoration:none}
+.btn-ghost{border:1.5px solid var(--line);color:var(--ink-soft)!important;background:var(--panel)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)!important;text-decoration:none}
+@media(max-width:640px){
+  .hero{flex-direction:column;align-items:flex-start}
+  header{padding:44px 0 36px}
+}
+
+/* ===== stats ===== */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.stat{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 20px;text-align:center;
+}
+.stat b{display:block;font-size:26px;color:var(--accent);letter-spacing:.5px}
+.stat span{font-size:13px;color:var(--ink-faint)}
+@media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* ===== sections ===== */
+section{padding:52px 0 8px}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.sec-head h2{font-size:24px;letter-spacing:1px;white-space:nowrap}
+.sec-head::after{content:"";flex:1;height:1px;background:var(--line)}
+.sec-head .num{
+  font-size:13px;font-weight:700;color:var(--accent);
+  background:var(--accent-soft);border-radius:8px;padding:2px 9px;
+}
+
+/* summary */
+.summary{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 30px;font-size:15.5px;color:var(--ink-soft);
+}
+.summary p+p{margin-top:10px}
+.summary strong{color:var(--ink)}
+.chips{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{
+  font-size:13px;padding:4px 12px;border-radius:99px;
+  background:var(--accent-soft);color:var(--accent-deep);font-weight:500;
+}
+
+/* timeline */
+.tl{position:relative;padding-left:30px}
+.tl::before{
+  content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;
+  background:linear-gradient(var(--accent),var(--line));
+}
+.job{position:relative;padding-bottom:34px}
+.job:last-child{padding-bottom:0}
+.job::before{
+  content:"";position:absolute;left:-30px;top:8px;width:14px;height:14px;border-radius:50%;
+  background:var(--panel);border:3px solid var(--accent);
+}
+.job h3{font-size:18px}
+.job h3 .co{color:var(--ink)}
+.job h3 .role{color:var(--accent-deep);font-weight:600}
+.job .meta{font-size:13.5px;color:var(--ink-faint);margin:2px 0 10px}
+.job ul{list-style:none}
+.job li{
+  position:relative;padding-left:18px;font-size:15px;color:var(--ink-soft);margin-bottom:6px;
+}
+.job li::before{content:"›";position:absolute;left:0;color:var(--accent);font-weight:700}
+.job li b{color:var(--ink)}
+
+/* skills */
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.skills{grid-template-columns:1fr}}
+.skill{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;transition:transform .2s,box-shadow .2s;
+}
+.skill:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(28,35,51,.08)}
+.skill .ico{font-size:24px}
+.skill h3{font-size:16.5px;margin:8px 0 6px}
+.skill p{font-size:14.5px;color:var(--ink-soft)}
+.skill p b{color:var(--accent-deep)}
+
+/* works */
+.works{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.works{grid-template-columns:1fr}}
+.work{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 24px;
+}
+.work h3{font-size:15.5px;margin-bottom:4px}
+.work h3 .tag{
+  display:inline-block;font-size:12px;font-weight:600;color:var(--gold);
+  background:#faf3e6;border-radius:6px;padding:1px 8px;margin-right:8px;vertical-align:2px;
+}
+.work p{font-size:14px;color:var(--ink-soft)}
+
+/* education */
+.edu{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 30px;
+}
+.edu h3{font-size:17px}
+.edu .meta{font-size:13.5px;color:var(--ink-faint);margin:2px 0 8px}
+.edu p{font-size:14.5px;color:var(--ink-soft)}
+
+/* footer */
+footer{margin-top:64px;border-top:1px solid var(--line);padding:28px 0 40px;text-align:center;color:var(--ink-faint);font-size:13.5px}
+footer b{color:var(--ink-soft)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">GAVIN<span>·</span>罗嘉裕</div>
+    <ul>
+      <li><a href="#summary">摘要</a></li>
+      <li><a href="#experience">经历</a></li>
+      <li><a href="#skills">能力</a></li>
+      <li><a href="#works">作品</a></li>
+      <li><a href="#education">教育</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="wrap">
+  <div class="hero">
+    <div class="avatar">罗</div>
+    <div>
+      <h1>罗嘉裕 <small>Gavin Luo</small></h1>
+      <div class="tagline">求职意向：海外社媒 / 社区运营</div>
+      <div class="contact">
+        <span>📱 13528970028（手机/微信）</span>
+        <span>✉️ <a href="mailto:luojiayu1125@gmail.com">luojiayu1125@gmail.com</a></span>
+        <span>🌐 CET-6 · 英语工作语言</span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:luojiayu1125@gmail.com">联系我</a>
+        <a class="btn btn-ghost" href="#works">查看作品</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>5 年</b><span>海外社媒与社区运营</span></div>
+    <div class="stat"><b>150k+</b><span>单场活动用户交互</span></div>
+    <div class="stat"><b>100k+</b><span>单场活动徽章发放</span></div>
+    <div class="stat"><b>30k+</b><span>交易挑战赛参与用户</span></div>
+  </div>
+</header>
+
+<section id="summary" class="wrap">
+  <div class="sec-head"><span class="num">01</span><h2>个人摘要</h2></div>
+  <div class="summary">
+    <p>5 年海外社媒与社区运营经验，长期面向海外用户运营 <strong>X、Facebook、YouTube、LinkedIn、Discord、Telegram</strong> 等全平台矩阵。策划社区互动活动与 UGC 玩法，具备<strong>内容日历管理、多语言本地化、社媒数据监测与舆情响应</strong>的完整闭环能力。</p>
+    <p>英语可作为工作语言（CET-6，多年全英文办公），深度整合 AI 工具链实现高频高质量内容产出。深耕以海外用户为主的 <strong>Web3 & AI 社区</strong>，熟悉社区自治、meme 传播与玩家式互动文化。</p>
+    <div class="chips">
+      <span class="chip">X</span><span class="chip">Facebook</span><span class="chip">YouTube</span>
+      <span class="chip">LinkedIn</span><span class="chip">Discord</span><span class="chip">Telegram</span>
+      <span class="chip">Web3</span><span class="chip">AI 工具链</span><span class="chip">多语言本地化</span><span class="chip">UGC 增长</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="wrap">
+  <div class="sec-head"><span class="num">02</span><h2>工作经历</h2></div>
+  <div class="tl">
+    <div class="job">
+      <h3><span class="co">OPENSCI</span> ｜ <span class="role">市场运营（AI 科研平台）</span></h3>
+      <div class="meta">2025.11 – 2026.09</div>
+      <ul>
+        <li>负责海外全渠道（X、LinkedIn、Facebook、YouTube）社媒内容运营，搭建「AI 调研 + AI 撰写 + AI 视觉生成」闭环 SOP，策划社媒日历与高质感视觉素材，保持品牌高度一致性与用户粘性。</li>
+        <li>主导科研/金融垂直内容的英文本地化与多语种产出，协同设计资源完成图文与视频内容，确保内容兼具专业精度与北美平台传播习惯的契合度。</li>
+        <li>负责 WLA 世界顶尖科学家协会海外社媒 X 以及国内微信公众号 & 视频号内容运营，输出内容日历、公众号文章撰写以及热点事件 AI 短视频制作。</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3><span class="co">RD Technology</span> ｜ <span class="role">市场运营（Web3 孵化器）</span></h3>
+      <div class="meta">2024.10 – 2025.08</div>
+      <ul>
+        <li>统筹 <b>8+ 项目</b>的品牌与社区矩阵管理，通过精细化内容日历与社区互动玩法，在市场波动期维持社区活跃度与用户粘性。</li>
+        <li>集成 VC、社区 KOL 与核心用户资源，搭建社区激励与互动机制，持续放大 UGC 产出与口碑传播。</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3><span class="co">摩石证券</span> ｜ <span class="role">内容营销（MC Markets & ETHH）</span></h3>
+      <div class="meta">2023.11 – 2024.08</div>
+      <ul>
+        <li>从 0 到 1 搭建海外平台社媒矩阵与内容体系，编写产品手册并完成竞品深度调研。</li>
+        <li>深度参与积分体系与交易挑战赛策划（吸引 <b>30k 用户参与</b>），通过赛事玩法显著提升平台品牌曝光量以及平台活跃度、交易量。</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3><span class="co">DID 项目</span> ｜ <span class="role">社区孵化运营</span></h3>
+      <div class="meta">2022.07 – 2023.10</div>
+      <ul>
+        <li>独立负责项目国内外社媒与 Discord/Telegram 社区矩阵，构建「AI + 协同创作」工作流，高效产出中英文深度长文、海报文案及短视频脚本。</li>
+        <li>策划多场社区互动活动与用户激励玩法，达成 <b>150k+ 钱包交互</b>与 <b>100k+ SBT 徽章发放</b>的突破性数据，驱动用户生成内容与社区自传播。</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3><span class="co">深圳市陀螺科技</span> ｜ <span class="role">区块链运营专员</span></h3>
+      <div class="meta">2021.05 – 2022.06</div>
+      <ul>
+        <li>负责项目库动态维护，创<b>单月 800+ 词条</b>产出记录，建立标准化评估与录入 SOP。</li>
+        <li>独立运营海外账号 TheBlock Bugle，以 Daily Market Report（数据图表 + 热点解析）持续监测舆情与用户反馈，累计发推 <b>1.3k+</b>，互动率与粉丝量持续增长。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="wrap">
+  <div class="sec-head"><span class="num">03</span><h2>核心能力</h2></div>
+  <div class="skills">
+    <div class="skill">
+      <div class="ico">🌍</div>
+      <h3>海外社媒全渠道内容运营</h3>
+      <p>具备 X、Facebook、YouTube、LinkedIn、Discord、Telegram <b>从 0 到 1 搭建</b>与规模化运营经验，擅长依据北美平台规则与社区文化定制内容策略，通过社媒日历与高质感视觉素材保持品牌一致性。</p>
+    </div>
+    <div class="skill">
+      <div class="ico">🚀</div>
+      <h3>社区活动策划与 UGC 增长</h3>
+      <p>主导多场线上互动活动与积分体系设计（最高 <b>30k 用户参与、150k+ 交互、100k+ 徽章发放</b>），以挑战赛、积分激励等玩法驱动用户生成内容与社区活跃度。</p>
+    </div>
+    <div class="skill">
+      <div class="ico">🤖</div>
+      <h3>AI 全流程内容生产与多语言本地化</h3>
+      <p>深度集成 <b>ChatGPT、Claude、Gemini、Canva、KlingAI</b> 于日常工作流，独立完成英文内容产出、多语种本地化润色与图文/视频素材协同制作，实现内容产出的高频与高质量并行。</p>
+    </div>
+    <div class="skill">
+      <div class="ico">📊</div>
+      <h3>社媒数据监测与舆情响应</h3>
+      <p>以<b>数据图表 + 热点解析</b>形式长期产出监测报告，擅长追踪用户反馈与舆情动态，联动团队快速响应，维护品牌口碑。</p>
+    </div>
+  </div>
+</section>
+
+<section id="works" class="wrap">
+  <div class="sec-head"><span class="num">04</span><h2>作品与账号（部分）</h2></div>
+  <div class="works">
+    <div class="work">
+      <h3><span class="tag">OPENSCI</span>X 日报 · Facebook · LinkedIn</h3>
+      <p>海外全渠道矩阵日常运营与内容产出。</p>
+    </div>
+    <div class="work">
+      <h3><span class="tag">WLA Summit</span>X 官方账号</h3>
+      <p>世界顶尖科学家协会海外社媒运营。</p>
+    </div>
+    <div class="work">
+      <h3><span class="tag">MC Markets</span>X 官方账号 & ETHH X 官方账号</h3>
+      <p>从 0 到 1 搭建海外平台社媒矩阵。</p>
+    </div>
+    <div class="work">
+      <h3><span class="tag">自媒体</span>小红书 / 视频号「Gavin 聊 AI 产业」</h3>
+      <p>AI 产业逻辑观察与个人内容品牌。</p>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="wrap">
+  <div class="sec-head"><span class="num">05</span><h2>教育背景</h2></div>
+  <div class="edu">
+    <h3>广东财经大学 ｜ 数学与统计学院 · 信息与计算科学专业</h3>
+    <div class="meta">全日制本科 · 2016.09 – 2020.06</div>
+    <p>语言能力：CET-6，英语可作为工作语言，多年全英文办公与英文内容独立产出经验。</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>罗嘉裕 Gavin Luo</b> · 海外社媒 / 社区运营<br>
+    📱 13528970028 ｜ ✉️ luojiayu1125@gmail.com
+  </div>
+</footer>
+
+</body>
+</html>
