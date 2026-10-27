@@ -285,6 +285,28 @@ section{padding:64px 0 6px}
 .edu .meta{font-size:13.5px;color:var(--ink-faint);margin:2px 0 8px}
 .edu p{font-size:14.5px;color:var(--ink-soft)}
 
+/* ===== investment ===== */
+.invest{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:760px){.invest{grid-template-columns:1fr}}
+.invest-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px 24px;position:relative;overflow:hidden;
+  transition:transform .25s,box-shadow .25s;
+}
+.invest-item::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3.5px;
+  background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .4s cubic-bezier(.2,.7,.3,1);
+}
+.invest-item:hover{transform:translateY(-5px);box-shadow:0 22px 44px rgba(20,26,46,.1)}
+.invest-item:hover::before{transform:scaleX(1)}
+.invest-item .ico{
+  width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  font-size:24px;background:var(--accent-soft);transition:transform .3s;
+}
+.invest-item:hover .ico{transform:rotate(-8deg) scale(1.1)}
+.invest-item h3{font-size:17px;margin:14px 0 8px}
+.invest-item p{font-size:14.5px;color:var(--ink-soft)}
+
 /* ===== footer ===== */
 footer{
   margin-top:72px;position:relative;padding:44px 0 46px;text-align:center;
@@ -325,6 +347,7 @@ footer .backtop:hover{background:var(--grad);color:#fff;border-color:transparent
       <li><a href="#skills">能力</a></li>
       <li><a href="#works">作品</a></li>
       <li><a href="#education">教育</a></li>
+      <li><a href="#investment">投资</a></li>
     </ul>
   </div>
 </nav>
@@ -382,7 +405,7 @@ footer .backtop:hover{background:var(--grad);color:#fff;border-color:transparent
   <div class="sec-head reveal"><span class="num">01</span><h2>个人摘要</h2><span class="line"></span></div>
   <div class="summary reveal">
     <p>5 年海外社媒与社区运营经验，长期面向海外用户运营 <strong>X、Facebook、YouTube、LinkedIn、Discord、Telegram</strong> 等全平台矩阵。策划社区互动活动与 UGC 玩法，具备<strong>内容日历管理、多语言本地化、社媒数据监测与舆情响应</strong>的完整闭环能力。</p>
-    <p>英语可作为工作语言（CET-6，多年全英文办公），深度整合 AI 工具链实现高频高质量内容产出。深耕以海外用户为主的 <strong>Web3 & AI 社区</strong>，熟悉社区自治、meme 传播与玩家式互动文化。</p>
+    <p>英语可作为工作语言（CET-6，多年全英文办公），深度整合 AI 工具链实现高频高质量内容产出。深耕以海外用户为主的 <strong>Web3 & AI 社区</strong>，熟悉社群运营、meme 传播与玩家式互动文化。</p>
     <div class="chips">
       <span class="chip">X</span><span class="chip">Facebook</span><span class="chip">YouTube</span>
       <span class="chip">LinkedIn</span><span class="chip">Discord</span><span class="chip">Telegram</span>
@@ -511,6 +534,22 @@ footer .backtop:hover{background:var(--grad);color:#fff;border-color:transparent
     <h3>广东财经大学 ｜ 数学与统计学院 · 信息与计算科学专业</h3>
     <div class="meta">全日制本科 · 2016.09 – 2020.06</div>
     <p>语言能力：CET-6，英语可作为工作语言，多年全英文办公与英文内容独立产出经验。</p>
+  </div>
+</section>
+
+<section id="investment" class="wrap">
+  <div class="sec-head reveal"><span class="num">06</span><h2>金融市场投资经验</h2><span class="line"></span></div>
+  <div class="invest">
+    <div class="invest-item reveal">
+      <div class="ico">📈</div>
+      <h3>港美股投资</h3>
+      <p>长期跟踪港美股市场，关注科技、AI 与金融板块，结合行业研究、公司基本面与市场舆情制定投资策略，熟悉财报解读与估值逻辑，具备仓位管理与风险控制意识。</p>
+    </div>
+    <div class="invest-item reveal">
+      <div class="ico">🪙</div>
+      <h3>加密货币投资</h3>
+      <p>深度参与加密货币市场，熟悉主流公链、DeFi 与 Web3 生态，具备链上数据分析与项目调研能力，能够将市场周期与社区情绪洞察转化为内容选题与社区运营策略。</p>
+    </div>
   </div>
 </section>
 
